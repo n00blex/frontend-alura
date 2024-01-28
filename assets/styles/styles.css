@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100;0,600;1,400&display=swap');
+
+:root {
+    --color-bg: #000000;
+    --color-hoover: #272727;
+    --color-text: #F6F6F6;
+    --color-highlight: #22D4FD;
+
+    --font-title: 'Krona One', sans-serif;
+    --font-main: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header__nav {
+    display: flex;
+    gap: 80px;
+}
+
+.header__nav__link {
+    font-family: var(--font-main);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-highlight);
+    text-decoration: none;
+}
+
+.titulo-destaque {
+    color: var(--color-highlight);
+}
+
+.conteudo {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo__section {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.conteudo__section__title {
+    font-size: 36px;
+    font-family: var(--font-title);
+}
+
+.conteudo__section__text {
+    font-size: 24px;
+    font-family: var(--font-main);
+}
+
+.conteudo__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.conteudo__links__subtitulo {
+    font-family: var(--font-title);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.conteudo__links__link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 8px;
+    border: 2px solid var(--color-highlight);
+    background: none;
+    color: var(--color-text);
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--font-main);
+    font-weight: 600;    
+    width: 378px;
+    padding: 16px 0;
+}
+
+.conteudo__links__link:hover {
+    background: var(--color-hoover);
+}
+
+.footer {
+    color: var(--color-bg);
+    background: var(--color-highlight);
+    padding: 24px;
+    font-family: var(--font-main);
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
